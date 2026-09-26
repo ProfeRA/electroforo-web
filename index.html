@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ElectroForo - Soluciones informáticas. Servicios técnicos, visitas a domicilio, presupuestos, insumos y repuestos." />
+  <title>ElectroForo | Soluciones Informáticas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand-mini" href="#inicio" aria-label="ElectroForo inicio">
+        <img src="assets/logo-electroforo.png" alt="ElectroForo - Soluciones Informáticas" />
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#servicios">Servicios</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#tienda">Insumos</a>
+        <a class="nav-cta" href="#reservas">Solicitar presupuesto</a>
+      </div>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-logo-wrap">
+        <img class="hero-logo" src="assets/logo-electroforo.png" alt="ElectroForo" />
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">SOLUCIONES INFORMÁTICAS</p>
+        <h1>Tu tecnología funcionando.<br><span>Nosotros nos ocupamos.</span></h1>
+        <p class="hero-text">Soporte técnico, mantenimiento, reparaciones, visitas a domicilio e insumos informáticos en un solo lugar.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#reservas">Reservar servicio</a>
+          <a class="btn btn-secondary" href="#tienda">Ver insumos</a>
+        </div>
+      </div>
+    </section>
+    <div class="scroll-hint">↓ Explorá nuestros servicios</div>
+  </header>
+
+  <main>
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">01 · SERVICIOS</p>
+          <h2>Soluciones para tu equipo.</h2>
+          <p>Atención técnica para hogares, profesionales y pequeños comercios.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card"><div class="service-icon">⌁</div><h3>Soporte técnico</h3><p>Diagnóstico y solución de problemas de hardware, software, redes y periféricos.</p><button class="text-btn" data-service="Soporte técnico">Solicitar →</button></article>
+          <article class="service-card"><div class="service-icon">◈</div><h3>Reparación de PC</h3><p>Limpieza, mantenimiento, cambio de componentes, optimización y puesta a punto.</p><button class="text-btn" data-service="Reparación de PC">Solicitar →</button></article>
+          <article class="service-card"><div class="service-icon">⌂</div><h3>Visita a domicilio</h3><p>Coordinamos día y horario para resolver el problema directamente en tu domicilio.</p><button class="text-btn" data-service="Visita a domicilio">Reservar →</button></article>
+          <article class="service-card"><div class="service-icon">▣</div><h3>Redes y conectividad</h3><p>Configuración de Wi‑Fi, routers, impresoras, cableado y dispositivos conectados.</p><button class="text-btn" data-service="Redes y conectividad">Solicitar →</button></article>
+          <article class="service-card"><div class="service-icon">⚙</div><h3>Actualizaciones</h3><p>Ampliación de memoria, almacenamiento SSD, instalación y migración de sistemas.</p><button class="text-btn" data-service="Actualizaciones">Cotizar →</button></article>
+          <article class="service-card"><div class="service-icon">✓</div><h3>Presupuestos</h3><p>Contanos qué necesitás y armamos una propuesta acorde a tu equipo y presupuesto.</p><button class="text-btn" data-service="Solicitud de presupuesto">Pedir presupuesto →</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reservation-section" id="reservas">
+      <div class="container reservation-layout">
+        <div class="section-heading sticky-copy">
+          <p class="eyebrow">02 · RESERVAS</p>
+          <h2>Coordinemos tu solución.</h2>
+          <p>Completá el formulario y te contactaremos para confirmar la visita o avanzar con el presupuesto.</p>
+          <div class="contact-note"><strong>Importante:</strong> la reserva queda pendiente de confirmación. El formulario no genera un turno automático.</div>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <div class="form-row">
+            <label>Nombre y apellido<input name="nombre" type="text" required placeholder="Tu nombre" /></label>
+            <label>Teléfono / WhatsApp<input name="telefono" type="tel" required placeholder="11 1234 5678" /></label>
+          </div>
+          <label>Email<input name="email" type="email" placeholder="nombre@email.com" /></label>
+          <div class="form-row">
+            <label>Tipo de solicitud
+              <select name="tipo" id="requestType" required>
+                <option value="">Seleccionar...</option>
+                <option>Visita a domicilio</option>
+                <option>Solicitud de presupuesto</option>
+                <option>Reparación / diagnóstico</option>
+                <option>Consulta general</option>
+              </select>
+            </label>
+            <label>Servicio<select name="servicio" id="serviceSelect" required>
+              <option value="">Seleccionar...</option>
+              <option>Soporte técnico</option><option>Reparación de PC</option><option>Visita a domicilio</option><option>Redes y conectividad</option><option>Actualizaciones</option><option>Solicitud de presupuesto</option>
+            </select></label>
+          </div>
+          <div class="form-row">
+            <label>Fecha preferida<input name="fecha" type="date" id="dateInput" /></label>
+            <label>Franja horaria<select name="horario"><option value="">A coordinar</option><option>Mañana</option><option>Mediodía</option><option>Tarde</option></select></label>
+          </div>
+          <label>Dirección (si corresponde)<input name="direccion" type="text" placeholder="Calle, número, localidad" /></label>
+          <label>Contanos qué necesitás<textarea name="detalle" rows="5" placeholder="Ej.: la PC se apaga, necesito instalar un SSD, quiero cotizar una notebook..."></textarea></label>
+          <button class="btn btn-primary full" type="submit">Enviar solicitud</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section store-section" id="tienda">
+      <div class="container">
+        <div class="store-header">
+          <div class="section-heading">
+            <p class="eyebrow">03 · INSUMOS Y REPUESTOS</p>
+            <h2>Equipá y mejorá tus equipos.</h2>
+            <p>Catálogo inicial preparado para ampliar con tus productos, precios y stock.</p>
+          </div>
+          <button class="cart-button" id="cartButton">Carrito <span id="cartCount">0</span></button>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-head"><h3>Tu carrito</h3><button id="closeCart" aria-label="Cerrar carrito">×</button></div>
+      <div id="cartItems" class="cart-items"><p class="empty-cart">Todavía no agregaste productos.</p></div>
+      <div class="cart-footer"><div><span>Total estimado</span><strong id="cartTotal">$0</strong></div><button class="btn btn-primary full" id="checkoutButton">Consultar compra</button></div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><img src="assets/logo-electroforo.png" alt="ElectroForo" class="footer-logo"><p>Soluciones informáticas.</p></div>
+      <div class="footer-links"><a href="#servicios">Servicios</a><a href="#reservas">Reservas</a><a href="#tienda">Insumos</a><a href="mailto:contacto@electroforo.com">contacto@electroforo.com</a></div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> ElectroForo. Todos los derechos reservados.</div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
