@@ -1,12 +1,12 @@
 const products = [
-  {id:1,name:'SSD 480 GB',desc:'Almacenamiento SATA para acelerar tu PC.',price:65000,icon:'▣'},
-  {id:2,name:'Memoria RAM 8 GB',desc:'DDR4 para ampliar el rendimiento.',price:48000,icon:'▤'},
-  {id:3,name:'Fuente 600 W',desc:'Fuente para equipos de uso general.',price:72000,icon:'⚡'},
-  {id:4,name:'Mouse inalámbrico',desc:'Conectividad 2.4 GHz y diseño ergonómico.',price:18000,icon:'⌁'},
-  {id:5,name:'Teclado USB',desc:'Teclado completo para oficina y hogar.',price:22000,icon:'⌨'},
-  {id:6,name:'Router Wi‑Fi',desc:'Conectividad estable para tu hogar.',price:52000,icon:'◉'},
-  {id:7,name:'Pendrive 64 GB',desc:'Almacenamiento portátil USB.',price:16000,icon:'▰'},
-  {id:8,name:'Pasta térmica',desc:'Para mantenimiento y transferencia térmica.',price:9000,icon:'●'}
+  {id:1,name:'SSD 480 GB',desc:'Almacenamiento SATA para acelerar tu PC.',price:159999,icon:'▣'},
+  {id:2,name:'Memoria RAM 8 GB',desc:'DDR4 para ampliar el rendimiento.',price:179999,icon:'▤'},
+  {id:3,name:'Fuente 600 W',desc:'Fuente para equipos de uso general.',price:24999,icon:'⚡'},
+  {id:4,name:'Mouse inalámbrico',desc:'Conectividad 2.4 GHz y diseño ergonómico.',price:12000,icon:'⌁'},
+  {id:5,name:'Teclado USB',desc:'Teclado completo para oficina y hogar.',price:15999,icon:'⌨'},
+  {id:6,name:'Repetidor Wi‑Fi TP-Link',desc:'Conectividad estable para tu hogar.',price:47999,icon:'◉'},
+  {id:7,name:'Pendrive 64 GB',desc:'Almacenamiento portátil USB.',price:20999,icon:'▰'},
+  {id:8,name:'Pasta térmica Arctic MX-4 4g',desc:'Para mantenimiento y transferencia térmica.',price:9999,icon:'●'}
 ];
 
 const money = n => new Intl.NumberFormat('es-AR',{style:'currency',currency:'ARS',maximumFractionDigits:0}).format(n);
