@@ -47,6 +47,18 @@
                     <a href="#reservas" class="btn btn-primary">Reservar servicio</a>
                     <a href="#tienda" class="btn btn-secondary">Ver insumos</a>
                 </div>
+                    <!-- NUEVO: Botón directo de WhatsApp -->
+                    <div class="whatsapp-direct">
+                        <p class="divider-text">Comunicate directamente:</p>
+                        <a href="https://wa.me/5491123456789?text=Hola%20Raúl,%20necesito%20ayuda%20con%20mi%20equipo" 
+                        class="btn btn-whatsapp" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                            <span class="whatsapp-icon">📱</span>
+                            Contactar por WhatsApp
+                        </a>
+                        <p class="whatsapp-note">Respuesta inmediata en horario laboral</p>
+                    </div>
             </div>
         </section>
         
@@ -119,9 +131,22 @@
                     <div class="contact-note">
                         <strong>Importante:</strong> la reserva queda pendiente de confirmación. El formulario no genera un turno automático.
                     </div>
+                    <br>
+                    <!-- NUEVO: Botón directo de WhatsApp -->
+                    <div class="whatsapp-direct">
+                        <p class="divider-text">Comunícate directamente:</p>
+                            <a href="https://wa.me/5491122863885?text=Hola%20Raul,%20necesito%20ayuda%20con%20mi%20equipo,%20mi%20nombre%20es%20" 
+                                class="btn btn-whatsapp" 
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                            <span class="whatsapp-icon">📱</span>
+                                Llamá ahora al WhatsApp
+                            </a>
+                        <p class="whatsapp-note">Respuesta inmediata en horario laboral</p>
+        </div>
                 </div>
                 
-                <form class="booking-form" id="bookingForm">
+                <form class="booking-form" id="bookingForm" action="https://formspree.io/f/xvkgjdvz">
                     <div class="form-row">
                         <label>Nombre y apellido
                             <input name="nombre" type="text" required placeholder="Tu nombre" />
@@ -169,8 +194,8 @@
                             <select name="horario">
                                 <option value="">A coordinar</option>
                                 <option>Mañana</option>
-                                <option>Mediodía</option>
                                 <option>Tarde</option>
+                                <option>Noche</option>
                             </select>
                         </label>
                     </div>
@@ -185,7 +210,18 @@
                     
                     <button class="btn btn-primary full" type="submit">Enviar solicitud</button>
                     <p class="form-status" id="formStatus" role="status"></p>
+                    
+                    <!-- Campo para el asunto del correo -->
+                    <!--  <input type="hidden" name="_subject" value="Nueva solicitud de reserva - ElectroForo" /> -->
+
+                    <!-- Campo para formatear el correo -->
+                    <!--  <input type="hidden" name="_format" value="table" />  -->
+
+                    <!-- Campo para redirigir a una página de agradecimiento (opcional) -->  -->
+                    <!--  <input type="hidden" name="_next" value="https://profera.github.io/electroforo-web/gracias.html" />  -->
+                    
                 </form>
+                
             </div>
         </section>
         
